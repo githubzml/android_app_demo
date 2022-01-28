@@ -70,5 +70,8 @@ android:layout_weight="2" 权重占比
   RadioGroup RadioButton 常用的属性和方法
 
 
+# 2022-1-28
+## 2.4 
+Toast 简单通知板
 
 
