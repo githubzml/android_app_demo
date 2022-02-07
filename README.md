@@ -80,3 +80,51 @@ Toast 简单通知板
 Notification 不出
 
 选项菜单
+
+# 2022-2-1
+
+菜单
+
+子菜单
+
+# 2022-2-2
+### 3.2.3
+上下文菜单
+
+### 3.3
+普通对话框
+
+自定义按钮不显示
+
+### 3.4
+Intent 传递消息的对象
+
+用户密码管理项目实施
+
+
+Intent 进行跳转
+
+# 2022-2-4
+
+### 4 产品列表展示项目
+
+
+
+```
+day1-gulp1
+|—— README.md
+├── gulpfile.js
+├── js
+│   └── main.js
+├── package-lock.json
+├── package.json
+├── src
+│   ├── css
+│   │   ├── style.css
+│   │   └── style1.css
+│   ├── index.html
+│   └── ts
+│       └── main.ts
+└── tsconfig.json
+│   └──
+```

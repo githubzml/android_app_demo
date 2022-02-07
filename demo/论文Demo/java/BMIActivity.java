@@ -3,15 +3,12 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.CheckBox;
 import android.widget.EditText;
-import android.widget.RadioGroup;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+public class BMIActivity extends AppCompatActivity {
     Button btnCom;
     EditText etWeight, etLight;
     TextView info;
@@ -19,19 +16,15 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_b_m_i);
+//        获取操作节点
         etWeight = findViewById(R.id.etWeight);
         etLight = findViewById(R.id.etLight);
 
         btnCom = findViewById(R.id.btnCom);
         info = findViewById(R.id.info);
-
-
+//        绑定查询事件
         btnCom.setOnClickListener(new View.OnClickListener() {
-
-            String TAG = "Main";
-
             @Override
             public void onClick(View v) {
                 String str = "";
@@ -39,13 +32,6 @@ public class MainActivity extends AppCompatActivity {
                 double b = Double.parseDouble(etLight.getText().toString());
                 double c = a / (b * b);
                 double m = Double.parseDouble(String.format("%.1f", c));
-
-                Log.i(TAG, "println输入日志信息: ");
-                Log.i(TAG, "onClick: " + a);
-                Log.i(TAG, "onClick: " + b);
-                Log.i(TAG, "onClick: " + c);
-                Log.i(TAG, "onClick: " + m);
-
 
                 if (m < 18.5) {
                     str = "过轻";
@@ -60,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 } else if (m >= 35) {
                     str = "非常肥胖";
                 }
-                info.setText("BMI数值：" + str);
+                info.setText("您的BMI数值是：" + m + " 您的健康状态是：" + str);
             }
         });
     }

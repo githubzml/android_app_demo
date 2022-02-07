@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--标题-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="北京2022年01月03日至2022年04月03日尾号限行"
+            android:textColor="#000000"
+            android:textSize="20dp"></TextView>
+
+
+    </LinearLayout>
+    <!--输入内容-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="请输入查询的星期天数"
+            android:textSize="18dp"></TextView>
+
+
+        <EditText
+            android:id="@+id/edInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"></EditText>
+    </LinearLayout>
+    <!--说明部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--        查询有误 请重新输入-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="（比如星期三输入3或三，周六,周日不限行）"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/findA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="查询"></Button>
+
+    <TextView
+        android:id="@+id/ccc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查询结果"></TextView>
+
+</LinearLayout>
+
